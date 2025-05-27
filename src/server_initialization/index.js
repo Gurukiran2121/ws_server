@@ -7,7 +7,7 @@ import cors from "cors";
 
 app.use(
   cors({
-    origin: ["http://localhost:5001", "https://chatsyn.netlify.app"],
+    origin: ["http://localhost:4010", "https://chatsyn.netlify.app"],
     methods: ["GET", "POST"],
     credentials: true,
   })
@@ -15,7 +15,7 @@ app.use(
 
 const io = new Server(httpServer, {
   cors: {
-    origin: ["http://localhost:5001", "https://chatsyn.netlify.app"],
+    origin: ["http://localhost:4010", "https://chatsyn.netlify.app"],
     methods: ["GET", "POST"],
     credentials: true,
   },
